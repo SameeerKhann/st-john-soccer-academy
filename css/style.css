@@ -1188,13 +1188,23 @@ p { margin: 0 0 1.1em; }
 }
 
 
-/* ============ Static home hero (minimal motion) ============ */
+/* ============ Home hero (background video) ============ */
 .home-hero {
   min-height: min(86vh, 720px);
   display: flex;
   align-items: center;
   padding-top: calc(var(--nav-h) + 40px);
+  overflow: hidden;
 }
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.home-hero::after { z-index: 1; }
 .home-hero h1 { font-size: clamp(2.5rem, 6vw, 4.4rem); max-width: 780px; }
 .home-hero p { max-width: 560px; font-size: 1.08rem; }
 .home-hero .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
