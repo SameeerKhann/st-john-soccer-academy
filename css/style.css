@@ -348,7 +348,7 @@ p { margin: 0 0 1.1em; }
 .page-hero::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(120deg, rgba(6,43,31,0.92), rgba(6,43,31,0.4));
+  background: linear-gradient(120deg, rgba(7,26,62,0.92), rgba(12,42,99,0.42));
 }
 .page-hero .container { position: relative; z-index: 2; }
 .page-hero h1 { color: var(--white); font-size: clamp(2.4rem, 5vw, 3.8rem); }
