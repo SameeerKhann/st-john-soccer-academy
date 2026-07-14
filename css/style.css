@@ -1097,6 +1097,89 @@ p { margin: 0 0 1.1em; }
   color: rgba(248, 250, 253, 0.45);
 }
 
+/* ============ Link hub (shareable landing) ============ */
+.linkhub {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 44px 20px;
+  background:
+    radial-gradient(900px 460px at 50% -8%, rgba(42, 98, 196, 0.35), transparent 62%),
+    linear-gradient(180deg, var(--green-900) 0%, var(--green-950) 100%);
+  color: #fff;
+}
+.linkhub-card { width: 100%; max-width: 440px; text-align: center; }
+.linkhub-crest {
+  width: 128px;
+  height: auto;
+  margin: 0 auto 16px;
+  filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.55));
+}
+.linkhub h1 {
+  color: #fff;
+  font-size: clamp(1.7rem, 6.5vw, 2.2rem);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.linkhub .lh-tag {
+  display: inline-block;
+  font-family: var(--font-head);
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  margin-bottom: 18px;
+}
+.linkhub .lh-intro {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+.linkhub-links { display: grid; gap: 12px; }
+.lh-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 14px;
+  font-family: var(--font-head);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.94rem;
+  font-weight: 600;
+  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+.lh-btn:hover { transform: translateY(-2px); background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.4); }
+.lh-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+.lh-btn--primary {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: var(--green-950);
+  border-color: transparent;
+  box-shadow: 0 10px 26px rgba(227, 170, 60, 0.4);
+  font-size: 1.02rem;
+  padding: 18px;
+}
+.lh-btn--primary:hover { background: linear-gradient(135deg, var(--gold-light), var(--gold)); transform: translateY(-2px); }
+.lh-contact { display: flex; gap: 10px; margin-top: 4px; }
+.lh-contact .lh-btn { flex: 1; padding: 15px 8px; font-size: 0.78rem; letter-spacing: 0.06em; }
+.lh-contact .lh-btn svg { width: 18px; height: 18px; }
+.linkhub-foot {
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+.linkhub-foot a { color: var(--gold-light); }
+.linkhub-foot strong { color: rgba(255, 255, 255, 0.8); font-weight: 600; }
+
 /* WhatsApp float */
 .wa-float {
   position: fixed;
